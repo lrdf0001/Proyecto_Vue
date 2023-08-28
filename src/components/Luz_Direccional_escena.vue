@@ -4,8 +4,8 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { GUI } from 'dat.gui'
 import { OBJLoader } from 'three/addons/loaders/OBJLoader.js';
 import { MTLLoader } from 'three/addons/loaders/MTLLoader.js';
-import treeOBJ from './model.obj';
-import treeMTL from './materials.mtl'
+import treeOBJ from '../public/model.obj';
+import treeMTL from '../public/materials.mtl'
 
 export default {
     name: 'Direccional',
