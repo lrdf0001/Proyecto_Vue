@@ -108,11 +108,11 @@ export default {
             const mtlLoader = new MTLLoader();
             const objLoader = new OBJLoader();
             
-            mtlLoader.load('https://github.com/lrdf0001/Proyecto_Vue/blob/master/src/assets/Models/Tree%20Assets/materials.mtl', (mtl) => {
+            mtlLoader.load('/public/Tree Assets/materials.mtl', (mtl) => {
                 mtl.preload();
                 objLoader.setMaterials(mtl);
                 
-                objLoader.load('https://github.com/lrdf0001/Proyecto_Vue/blob/master/src/assets/Models/Tree%20Assets/model.obj', (root) => {
+                objLoader.load('/public/Tree Assets/model.obj', (root) => {
                     scene.add(root);
 
                     root.traverse(function(node){
