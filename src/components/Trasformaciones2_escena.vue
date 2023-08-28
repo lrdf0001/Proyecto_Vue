@@ -94,7 +94,7 @@ methods: {
 		scene.add(ambientLight);
 		
 		const pointLight = new THREE.PointLight(color, intensity);
-		pointLight.position.set(0, 7, 0);
+		pointLight.position.set(0, 5, 0);
 		scene.add(pointLight);		
 
 	//========================= Camara =============================
@@ -119,7 +119,6 @@ methods: {
 		
 		const renderer = new THREE.WebGLRenderer({canvas: canvas});    
 		renderer.render(scene, camera);
-		
 
 		renderer.render(scene, camera);
 
